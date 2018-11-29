@@ -25,7 +25,7 @@ namespace Appie5
             BindingContext = this;
         }
 
-        public async void Toevoegen_CLicked(object sender, EventArgs e)
+        public void Toevoegen_CLicked(object sender, EventArgs e)
         {
             Application.Current.MainPage = new ProductToevoegen();
         }
