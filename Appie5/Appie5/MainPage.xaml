@@ -13,7 +13,6 @@
         <Label Text="{Binding Product.Kleur}" />
         <Label Text="Prijs:" />
         <Label Text="{Binding Product.Prijs}" />
-        <Button Text="Nieuw Product Toevoegen" Clicked="Toevoegen_CLicked"/>
+        <Button Text="Nieuw Product Toevoegen" Clicked="Toevoegen_CLicked" />
     </StackLayout>
-
 </ContentPage>

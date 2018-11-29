@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Appie5.Models;
+﻿using Appie5.Models;
+using System;
 using Xamarin.Forms;
 
 namespace Appie5
@@ -17,10 +13,12 @@ namespace Appie5
             InitializeComponent();
 
             Product = new Product()
-                {Categorie = new Categorie(){Naam="Geen idee"}, 
-                    Kleur = "Rood", 
-                    Naam = "Weet ik niet", 
-                    Prijs=99.99};
+            {
+                Categorie = new Categorie() { Naam = "Geen idee" },
+                Kleur = "Rood",
+                Naam = "Weet ik niet",
+                Prijs = 99.99
+            };
 
             BindingContext = this;
         }
