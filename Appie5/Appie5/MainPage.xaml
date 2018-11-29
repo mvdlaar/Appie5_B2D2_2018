@@ -5,10 +5,15 @@
              x:Class="Appie5.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Label Text="Naam:" />
+        <Label Text="{Binding Product.Naam}" />
+        <Label Text="Categorie:" />
+        <Label Text="{Binding Product.Categorie.Naam}" />
+        <Label Text="Kleur:" />
+        <Label Text="{Binding Product.Kleur}" />
+        <Label Text="Prijs:" />
+        <Label Text="{Binding Product.Prijs}" />
+        <Button Text="Nieuw Product Toevoegen" Clicked="Toevoegen_CLicked"/>
     </StackLayout>
 
 </ContentPage>

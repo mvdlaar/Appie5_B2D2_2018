@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Appie5.ProductToevoegen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Naam:" />
+            <Entry Text="{Binding Product.Naam}" />
+            <Label Text="Categorie:" />
+            <Entry Text="{Binding Product.Categorie.Naam}" />
+            <Label Text="Kleur:" />
+            <Entry Text="{Binding Product.Kleur}" />
+            <Label Text="Prijs:" />
+            <Entry Text="{Binding Product.Prijs}" />
+            <Button Text="Opslaan" Clicked="Opslaan_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
